@@ -1,0 +1,2 @@
+# ChessTrainer
+ Unit Chess Exercise
