@@ -349,11 +349,13 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/BlackPiece.cs"
 "Assets/Scripts/Board.cs"
-"Assets/Scripts/MouseDrag.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Piece.cs"
 "Assets/Scripts/Row.cs"
 "Assets/Scripts/Square.cs"
+"Assets/Scripts/WhitePiece.cs"
 -langversion:9.0
 
 /deterministic
