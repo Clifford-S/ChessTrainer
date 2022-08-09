@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class GameManager : MonoBehaviour
 {
 
@@ -10,10 +11,12 @@ public class GameManager : MonoBehaviour
     public GameObject board;
     public bool hitIt;
 
+
     // Start is called before the first frame update
     void Start()
     {
         board = GameObject.Find("Chess Board Play Surface");
+
     }
 
     // Update is called once per frame
@@ -41,4 +44,7 @@ public class GameManager : MonoBehaviour
             newPiece.GetComponent<Piece>().onBoard = true;
         }
     }
+
+
+
 }
