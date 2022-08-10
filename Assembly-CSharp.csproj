@@ -60,10 +60,10 @@
     <Compile Include="Assets\Scripts\Square.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Board.cs" />
+    <Compile Include="Assets\Button.cs" />
     <Compile Include="Assets\Scripts\Row.cs" />
     <Compile Include="Assets\Scripts\WhitePiece.cs" />
     <Compile Include="Assets\Scripts\BlackPiece.cs" />
-    <Compile Include="Assets\Button.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
