@@ -23,6 +23,7 @@ public class Row : MonoBehaviour
         for (int i = 0; i < squares.Length; i++)
         {
             squares[i] = gameObject.AddComponent<Square>();
+            squares[i].setSize(60f);
             squares[i].setPosition(rowNumb, i);
         }
     }

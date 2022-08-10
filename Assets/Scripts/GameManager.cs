@@ -22,20 +22,26 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
+ 
         if (Input.GetMouseButtonDown(1))
         {
-            if (Physics.Raycast(ray,  out hit))
-            {
-                hitIt = true;
-               // Debug.Log(hit.point);
-                newPiece.transform.position = new Vector3(hit.point.x, hit.point.y, hit.point.z);
-            }
+            RepositionPiece();
         }
     }
+    // ABSTRACTION
+    // hiding the details of repositioning a piece
+    private void RepositionPiece() {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            hitIt = true;
+            // Debug.Log(hit.point);
+            newPiece.transform.position = new Vector3(hit.point.x, hit.point.y, hit.point.z);
+        }
+}
 
-    public void Spawn(GameObject pieceName)
+public void Spawn(GameObject pieceName)
     {
         GameObject oldPiece = GameObject.Find(pieceName.name);
         if(oldPiece.GetComponent<Piece>().onBoard == false)

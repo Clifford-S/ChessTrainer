@@ -4,23 +4,46 @@ using UnityEngine;
 
 public class Square : MonoBehaviour
 {
-    private float size = 0.06f;
+    private float size;
     private bool hasPiece;
 
     // positions are relative to bottom left corner of board
     // positions are measured at bottom left corner of square
-    public float zPos;  // Row
-    public float xPos;  // Column
+    private float zPos;  // Row
+    private float xPos;  // Column
 
     // Start is called before the first frame update
     void Start()
     {
     }
+    // POLYMORPHISM
+    // will accpet a float or an int 
+    public void setSize(float sizeF)
+    {
+        size = sizeF;
+    }
+// POLYMORPHISM
+// will accept a float or an int 
+public void setSize(int sizeI)
+    {
+        size = (float)sizeI;
+    }
 
+    // ENCAPSULATION
     public void setPosition(int z, int x)
     {
         zPos = z * size;
         xPos = x * size;
+    }
+    // ENCAPSULATION
+    public float getX()
+    {
+        return xPos;
+    }
+    // ENCAPSULATION
+    public float getZ()
+    {
+        return zPos;
     }
 
     // Update is called once per frame
